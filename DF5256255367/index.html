@@ -1,0 +1,453 @@
+<!DOCTYPE html><html lang="id">
+<head>
+     <meta name="theme-color" content="#462c2c">
+    <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+  <link  href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">   
+        <title>Payment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+       ::-moz-selection {
+  background-color: #333;
+  color: #fff;
+}
+
+::selection {
+  background-color: #555;
+  color: #fff;
+}
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');* {
+        user-select: ;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        -webkit-tap-highlight-color: transparent;
+        font-family: 'Poppins', sans-serif;
+    }
+    * {
+            -webkit-tap-highlight-color: transparent;
+    user-drag: none; 
+    -webkit-user-drag: none; box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+            overflow-x: ;
+        
+    }
+body {
+  overflow: hidden;
+    background: #f4f4f4/*url("bg.jpg")*/;
+   background-size: cover;
+  background-attachmen: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    background: #fff; /*rgba(255, 255, 255, 0.9)*/;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+  font-family: "Merienda", serif;
+    max-width: 400px;
+    text-align: center;
+}
+h1 {
+        user-select: none;
+-webkit-user-select: none; 
+-moz-user-select: none; 
+-ms-user-select: none; 
+    margin-top: 10px;
+  font-family: "Indie Flower", serif;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+.form-group {
+        user-select: none;
+-webkit-user-select: none; 
+-moz-user-select: none; 
+-ms-user-select: none; 
+    margin-bottom: 15px;
+    text-align: left;
+}
+label {
+    font-family: "Caveat", serif;
+        user-select: none;
+-webkit-user-select: none; 
+-moz-user-select: none; 
+  text-align: left;
+-ms-user-select: none; 
+    font-weight: 600;
+  margin-left: 2px;
+    display: block;
+    color: #444;
+    margin-bottom: 5px;
+  font-size: 24px;
+}
+select, button {
+  
+        user-select: none;
+-webkit-user-select: none; 
+-moz-user-select: none; 
+-ms-user-select: none; 
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    
+}
+  #amount-select {
+    
+  }
+         .hidden { display: none; }
+.btn {
+        user-select: none;
+-webkit-user-select: none; 
+-moz-user-select: none; 
+-ms-user-select: none; 
+    background: #007bff;
+    color: white;
+    border: none;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.btn:hover {
+    background: #0056b3;
+}
+#qris, #qs {
+        
+    display: none;
+    margin-top: 15px;
+    
+}
+img {
+        pointer-events: none;
+    width: 250px;
+    max-width: 250px;
+    margin-top: -20px;
+    border-radius: 10px;
+   
+}
+ul li{
+          font-family: "Libre Baskerville", serif;
+        user-select: none;
+-webkit-user-select: none; 
+-moz-user-select: none; 
+-ms-user-select: none; 
+  margin-top: 2px;
+    margin-left: 10px;}
+ .qrr {
+         user-select: none;
+-webkit-user-select: none; 
+-moz-user-select: none; 
+-ms-user-select: none; 
+     margin: 15px;
+     border-radius: 10px;
+     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+     .qrr h3 {
+
+user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; color: #222; font-size: 25px; padding-top: 10px; } .info-tainer { display: grid; grid-template-columns: 1fr 1fr; background: #eee; border-radius: 8px; padding: 10px; margin-top: 10px; border: 2px solid #444; } .info-container div { padding: 8px; font-size: 14px; color: #444; font-weight: 500; text-align: ; border-bottom: 2px solid #444; border-right: 2px solid #444; } .info-container div:nth-child(2n) { border-right: none; } .info-container div:nth-last-child(1), .info-container div:nth-last-child(2) { border-bottom: none; } .terms { } .url { user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; text-decoration: none; color: #1c86ee; } .url:hover { text-decoration: underline; color: #1c86ee; } .left{ user-select: } .c{ user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; }
+.indie-flower-regular {
+  font-family: "Indie Flower", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+ select {  font-family: "Merienda", serif; border: 2px solid #666; appearance: none; /* Menghapus tampilan default pada beberapa browser */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #eee; }
+        h1 { color: #6f0000; font-weight: bold; margin-bottom: 15px; }
+        label { font-weight: 600; color: #444; margin-bottom: 5px; display: block; }
+        select {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 8px;
+            
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+  select:focus {
+    outline: none;
+    : 0px solid #1c86ee;
+}
+  
+.caveat-<uniquifier> {
+  font-family: "Caveat", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+        .btn { background: #007bff; color: white; border: none; font-weight: 700; margin-top: 10px; font-family: "Caveat", serif; font-size: 23px; padding: 10px;}
+        .btn:hover { background: #0056b3; }
+        .hidden { display: none; }
+        #rekening-number, #bank-name {padding-left: 0px; padding-right: 0px;}
+        img { width: 250px; border-radius: 10px; margin-top: -20px; }
+        .info-container { display: grid; grid-template-columns: 1fr 1fr; background: #f3f3f3; border-radius: 5px; padding: 0px; margin-top: 10px; border: 2px solid #bbb; } .info-container div { padding: 8px; font-size: 14px; color: #444; font-weight: 500; text-align: center; border-bottom: 2px solid #bbb; border-right: 2px solid #bbb;} .info-container div:nth-child(2n) { border-right: none; } .info-container div:nth-last-child(1), .info-container div:nth-last-child(2) { border-bottom: none; } .terms { user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; margin-top: 20px; font-size: 12px; color: #666; text-align: left; border-top: 1px solid #ddd; padding-top: 10px; } .url { user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; text-decoration: none; color: #1c86ee; } .url:hover { text-decoration: underline; color: #1c86ee; } .left{ user-select: } .c{ user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; }
+  
+  
+  
+  
+  
+  
+  
+@media screen and (min-width: 400px) {
+  body {
+    background: url("Ponsel 400.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    } .container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+  font-family: "Merienda", serif;
+    max-width: 400px;
+    text-align: center;
+}}
+  
+  
+  
+  
+  
+  
+  @media screen and (min-width: 350px) {
+  body {
+    background: url("Ponsel.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} .container {
+    background: rgba(255, 255, 255, 0.93);
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+  font-family: "Merienda", serif;
+    max-width: 400px;
+    text-align: center;
+}}
+
+  
+  
+  
+  
+  
+  @media screen and (min-width: 500px) {
+  body {
+    background: url("Ponsel 500.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} .container {
+    background: rgba(255, 255, 255, 0.93);
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+  font-family: "Merienda", serif;
+    max-width: 400px;
+    text-align: center;
+}}
+  
+  @media screen and (min-width: 760px) {
+  body {
+    background: url("Tablet.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} .container {
+    background: rgba(255, 255, 255, 0.93);
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+  font-family: "Merienda", serif;
+    max-width: 400px;
+    text-align: center;
+}
+}
+  @media screen and (min-width: 1000px) {
+  body {
+    background: url("Laptop 1400.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} .container {
+    background: rgba(255, 255, 255, 0.93);
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+  font-family: "Merienda", serif;
+    max-width: 400px;
+    text-align: center;
+}}
+    </style>
+</head>
+<body>
+<div class="container" class="c">
+    <h1>Download File</h1>
+    <label for="payment-method">Metode Pembayaran:</label>
+    <select id="payment-method" onchange="togglePayment()">
+        <option hidden value="">Pilih</option>
+        <option value="dana">DANA</option>
+            <!-- <option value="qris">QRIS (Shopeepay)</option>-->
+        <option value="bca">BCA</option>
+        <option value="bri">BRI</option>
+        <option value="mandiri">Mandiri</option>
+        <option value="bsi">Permata Bank</option>
+        <option value="bni">BNI</option>
+    </select><div id="qris" class="hidden">
+    <p><strong>Silakan scan QRIS di bawah!</strong></p>
+            <div class="qrr">
+            <h3>Smart Netizen</h3>
+    <img src="Hus7yhw7hggd77u2jxi8ube88ubbd8u.png" alt="QRIS">
+                    </div>
+    <button onclick="downloadQRIS()" class="btn">Download QRIS</button>
+</div>
+
+<div id="rekening" class="hidden">
+    <p class="c" style="margin-top: 13px; margin-bottom: 18px; font-size: 16.5px; font-weight: 600; color: #444; line-height: 1.5;   font-family: 'Merienda', serif;">Silakan transfer ke rekening berikut dengan jumlah yang tertera</p>
+    <div class="info-container">
+       <div class="c">Jumlah:</div> <div class="c"> Rp10.000</div>
+     <div>No. Rek:</div>  <div id="rekening-number"> </div>
+        <div class="c">Bank:</div> <div class="c" id="bank-name"></div>
+    </div>
+</div>
+
+<div id="amount-section" class="hidden" style="margin-top: 10px">
+  <label style="text-align: left; font-size: 23px; margin-left: 2px; font-family: 'Caveat', serif;">Nominal Transfer:</label>
+    <select id="amount-select" onchange="toggleAmount()">
+      
+      
+      
+      <option value="" hidden>Pilih nominal transfer</option>
+       <option value="10000">Rp10.000</option>
+      <!--  <option value="5000">Rp5.000</option>
+        
+        <option value="20000">Rp20.000</option>
+        <option value="50000">Rp50.000</option>
+        <option value="100000">Rp100.000</option>
+        <option value="150000">Rp150.000</option>
+        <option value="200000">Rp200.000</option>
+        <option value="250000">Rp250.000</option>
+        <option value="300000">Rp300.000</option>
+        <option value="500000">Rp500.000</option>
+        <option value="1000000">Rp1.000.000</option>-->
+    </select>
+    <button id="pay-btn" class="hidden btn" onclick="redirectToPayment()">Bayar</button>
+</div><div id="rekening" class="hidden">
+    <p>Transfer ke rekening <span id="bank-name"></span>: <strong id="rekening-number"></strong></p>
+</div><div id="qris" class="hidden">
+    <button onclick="downloadQRIS()">Download QRIS</button>
+</div><div style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; margin-top: 20px; font-size: 12px; color: #666; text-align: left; border-top: 1px solid #ddd; padding-top: 10px; ">
+    <p><strong>Petunjuk & Ketentuan Pembayaran:</strong></p>
+    <ul>
+        <li>Pastikan jumlah transfer sesuai dengan yang  tertera.</li>
+        <li>Khusus pembayaran melalui DANA, akun yang digunakan harus berstatus premium.</li>
+        <li>Setelah pembayaran, ambil gambar bukti transaksi.</li>
+        <li>Upload gambar bukti transaksi pada <a href="https://forms.gle/9BKvKnWFn8KcFGA3A" class="url">tautan ini</a>.</li>
+       <li>Pembayaran akan diverifikasi dalam waktu kurang dari 2 menit.</li>
+      <li>Setelah verifikasi selesai, link download akan diberikan.</li>
+    </ul>
+</div><script>
+ const paymentLinks = { 
+   "": "https://link.dana.id/minta/2vm4s7cvlw",
+   "5000": "https://link.dana.id/minta/2vm4s35i6wk",
+   "10000": "https://link.dana.id/minta/2vm4s7cvlw",
+   "20000": "https://link.dana.id/minta/2vm4s91384",
+   "50000": "https://link.dana.id/minta/2vm4sa4izxg", 
+   "100000": "https://link.dana.id/minta/2vm4sc3ge9o", 
+   "150000": "https://link.dana.id/minta/2vm4sg12aqc", 
+   "200000": "https://link.dana.id/minta/2vm4sh4dtz0", 
+   "250000": "https://link.dana.id/minta/2vm4sjwq44", 
+   "300000": "https://link.dana.id/minta/2vm4sk4s004",
+   "500000": "https://link.dana.id/minta/2vm4ty2m3zo",
+   "1000000": "https://link.dana.id/minta/2vm4u11def8"
+ };
+
+const rekeningData = { bca: { number: "3901082142909096", bank: "BCA" }, bri: { number: "88810082142909096", bank: "BRI" }, mandiri: { number: "89508082142909096", bank: "Mandiri" }, bsi: { number: "8528082142909096", bank: "Permata Bank" }, bni: { number: "8810082142909096", bank: "BNI" } };
+
+function togglePayment() { let method = document.getElementById("payment-method").value; document.getElementById("qris").classList.add("hidden"); document.getElementById("rekening").classList.add("hidden"); document.getElementById("amount-section").classList.add("hidden"); document.getElementById("pay-btn").classList.add("hidden"); document.getElementById("amount-select").value = ""; // Reset pilihan nominal transfer
+
+if (method === "qris") {
+    document.getElementById("qris").classList.remove("hidden");
+} else if (rekeningData[method]) {
+    document.getElementById("rekening").classList.remove("hidden");
+    document.getElementById("rekening-number").textContent = rekeningData[method].number;
+    document.getElementById("bank-name").textContent = rekeningData[method].bank;
+} else if (method === "dana") {
+    document.getElementById("amount-section").classList.remove("hidden");
+}
+
+}
+
+function toggleAmount() { let amount = document.getElementById("amount-select").value; let payBtn = document.getElementById("pay-btn");
+
+if (amount) {
+    payBtn.classList.remove("hidden");
+    payBtn.textContent = "Bayar Rp " + parseInt(amount).toLocaleString("id-ID");
+    payBtn.setAttribute("data-amount", amount);
+} else {
+    payBtn.classList.add("hidden");
+}
+
+}
+
+function redirectToPayment() { let amount = document.getElementById("pay-btn").getAttribute("data-amount"); if (amount && paymentLinks[amount]) { window.location.href = paymentLinks[amount]; } }
+
+function downloadQRIS() { window.location.href = "https://drive.usercontent.google.com/u/0/uc?id=1fZVcMvhaReLL2yFfvii4OejBD_AwJLst&export=download"; }
+
+
+  
+  async function fetchKurs() {  
+    try {  
+        let response = await fetch('https://api.exchangerate-api.com/v4/latest/USD');  
+        let data = await response.json();  
+        document.getElementById('kurs').textContent = Math.floor(data.rates.IDR * 3.3).toLocaleString("id-ID");  
+    } catch {  
+        document.getElementById('kurs').textContent = "Gagal memuat";  
+    }  
+}  
+    window.onload = fetchKurs;  
+</script></body>
+</html>
