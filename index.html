@@ -1,3 +1,4 @@
+
 <!DOCTYPE html><html lang="id">
 <head>
      <meta name="theme-color" content="#462c2c">
@@ -126,15 +127,16 @@ select, button {
 }
 #qris, #qs {
         
-    display: none;
+    display: ;
+    padding: 20px;
     margin-top: 15px;
-    
+    background-color: transparent;
 }
 img {
         pointer-events: none;
-    width: 250px;
-    max-width: 250px;
-    margin-top: -20px;
+    width: 220px;
+    max-width: 220px;
+    margin-top: 90px;
     border-radius: 10px;
    
 }
@@ -151,9 +153,10 @@ ul li{
 -webkit-user-select: none; 
 -moz-user-select: none; 
 -ms-user-select: none; 
-     margin: 15px;
+     margin: 16px;
      border-radius: 10px;
      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+   background: transparent !important;
 }
      .qrr h3 {
 
@@ -193,7 +196,7 @@ user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-s
         .btn:hover { background: #0056b3; }
         .hidden { display: none; }
         #rekening-number, #bank-name {padding-left: 0px; padding-right: 0px;}
-        img { width: 250px; border-radius: 10px; margin-top: -20px; }
+        img { width: 250px; border-radius: 10px; margin-top: 0px; }
         .info-container { display: grid; grid-template-columns: 1fr 1fr; background: #f3f3f3; border-radius: 5px; padding: 0px; margin-top: 10px; border: 2px solid #bbb; } .info-container div { padding: 8px; font-size: 14px; color: #444; font-weight: 500; text-align: center; border-bottom: 2px solid #bbb; border-right: 2px solid #bbb;} .info-container div:nth-child(2n) { border-right: none; } .info-container div:nth-last-child(1), .info-container div:nth-last-child(2) { border-bottom: none; } .terms { user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; margin-top: 20px; font-size: 12px; color: #666; text-align: left; border-top: 1px solid #ddd; padding-top: 10px; } .url { user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; text-decoration: none; color: #1c86ee; } .url:hover { text-decoration: underline; color: #1c86ee; } .left{ user-select: } .c{ user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; }
   
   
@@ -330,7 +333,7 @@ user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-s
     <select id="payment-method" onchange="togglePayment()">
         <option hidden value="">Pilih</option>
         <option value="dana">DANA</option>
-            <!-- <option value="qris">QRIS (Shopeepay)</option>-->
+        <option value="qris">QRIS</option>
         <option value="bca">BCA</option>
         <option value="bri">BRI</option>
         <option value="mandiri">Mandiri</option>
@@ -339,8 +342,8 @@ user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-s
     </select><div id="qris" class="hidden">
     <p><strong>Silakan scan QRIS di bawah!</strong></p>
             <div class="qrr">
-            <h3>Smart Netizen</h3>
-    <img src="Hus7yhw7hggd77u2jxi8ube88ubbd8u.png" alt="QRIS">
+              
+    <img src="code_202503151202235.png" alt="QRIS">
                     </div>
     <button onclick="downloadQRIS()" class="btn">Download QRIS</button>
 </div>
@@ -386,33 +389,38 @@ user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-s
     </ul>
 </div><script>
  const paymentLinks = { 
-   "5000": "https://link.dana.id/minta/2vm4s35i6wk",
-   "10000": "https://link.dana.id/minta/2vm4s7cvlw",
-   "20000": "https://link.dana.id/minta/2vm4s91384",
-   "50000": "https://link.dana.id/minta/2vm4sa4izxg", 
-   "100000": "https://link.dana.id/minta/2vm4sc3ge9o", 
-   "150000": "https://link.dana.id/minta/2vm4sg12aqc", 
-   "200000": "https://link.dana.id/minta/2vm4sh4dtz0", 
-   "250000": "https://link.dana.id/minta/2vm4sjwq44", 
-   "300000": "https://link.dana.id/minta/2vm4sk4s004",
-   "500000": "https://link.dana.id/minta/2vm4ty2m3zo",
-   "1000000": "https://link.dana.id/minta/2vm4u11def8"
+   "5000": "https://link.dana.id/minta/2vpqqu3b1ka",
+   "10000": "https://link.dana.id/minta/2vpqqz26caa",
+   "20000": "https://link.dana.id/minta/2vpqr546gqi",
+   "50000": "https://link.dana.id/minta/2vpqra5osr6", 
+   "100000": "https://link.dana.id/minta/2vpqrc5mkia", 
+   "150000": "https://link.dana.id/minta/2vpqre5htze", 
+   "200000": "https://link.dana.id/minta/2vpqrj1a0pe", 
+   "250000": "https://link.dana.id/minta/2vpqrm2ujfe", 
+   "300000": "https://link.dana.id/minta/2vpqrp58be2",
+   "500000": "https://link.dana.id/minta/2vpqru36s0i",
+   "1000000": "https://link.dana.id/minta/2vpqrw15qi"
  };
 
-const rekeningData = { bca: { number: "3901082142909096", bank: "BCA" }, bri: { number: "88810082142909096", bank: "BRI" }, mandiri: { number: "89508082142909096", bank: "Mandiri" }, bsi: { number: "8528082142909096", bank: "Permata Bank" }, bni: { number: "8810082142909096", bank: "BNI" } };
+const rekeningData = { bca: { number: "3901085706095506", bank: "BCA" }, bri: { number: "88810085706095506", bank: "BRI" }, mandiri: { number: "89508085706095506", bank: "Mandiri" }, bsi: { number: "8528085706095506", bank: "Permata Bank" }, bni: { number: "8810085706095506", bank: "BNI" } };
 
 function togglePayment() { let method = document.getElementById("payment-method").value; document.getElementById("qris").classList.add("hidden"); document.getElementById("rekening").classList.add("hidden"); document.getElementById("amount-section").classList.add("hidden"); document.getElementById("pay-btn").classList.add("hidden"); document.getElementById("amount-select").value = ""; // Reset pilihan nominal transfer
 
 if (method === "qris") {
+  document.body.style.overflow = "visible";
     document.getElementById("qris").classList.remove("hidden");
 } else if (rekeningData[method]) {
+  document.body.style.overflow = "hidden";
     document.getElementById("rekening").classList.remove("hidden");
     document.getElementById("rekening-number").textContent = rekeningData[method].number;
     document.getElementById("bank-name").textContent = rekeningData[method].bank;
 } else if (method === "dana") {
+  document.body.style.overflow = "hidden";
     document.getElementById("amount-section").classList.remove("hidden");
-}
+} else {
 
+    document.body.style.overflow = "hidden";
+}
 }
 
 function toggleAmount() { let amount = document.getElementById("amount-select").value; let payBtn = document.getElementById("pay-btn");
@@ -429,7 +437,7 @@ if (amount) {
 
 function redirectToPayment() { let amount = document.getElementById("pay-btn").getAttribute("data-amount"); if (amount && paymentLinks[amount]) { window.location.href = paymentLinks[amount]; } }
 
-function downloadQRIS() { window.location.href = "https://drive.usercontent.google.com/u/0/uc?id=1fZVcMvhaReLL2yFfvii4OejBD_AwJLst&export=download"; }
+function downloadQRIS() { window.location.href = "https://drive.usercontent.google.com/u/0/uc?id=1pt0AwnCV8Mott7hPgHnmrS654rjSDEcr&export=download"; }
 
 
   
