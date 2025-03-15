@@ -126,17 +126,18 @@ select, button {
     background: #0056b3;
 }
 #qris, #qs {
-        
+    justify-content: center;
+    align-items: center;
     display: ;
-    padding: 20px;
+    padding: 0px;
     margin-top: 15px;
     background-color: transparent;
 }
 img {
         pointer-events: none;
-    width: 220px;
-    max-width: 220px;
-    margin-top: 90px;
+    width: 250px;
+    max-width: 250px;
+    margin-left: 0px;
     border-radius: 10px;
    
 }
@@ -341,10 +342,10 @@ user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-s
         <option value="bni">BNI</option>
     </select><div id="qris" class="hidden">
     <p><strong>Silakan scan QRIS di bawah!</strong></p>
-            <div class="qrr">
+            
               
-    <img src="code_202503151202235.png" alt="QRIS">
-                    </div>
+    <img class="qrr" src="code_202503151202235.png" alt="QRIS">
+                    
     <button onclick="downloadQRIS()" class="btn">Download QRIS</button>
 </div>
 
